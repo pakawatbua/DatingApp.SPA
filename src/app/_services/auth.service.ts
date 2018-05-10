@@ -20,6 +20,7 @@ export class AuthService {
   }
 
   register(model: any) {
+    // Test
     return this.http.post(this.baseUrl + 'register', model, this.requestOptions());
   }
 
