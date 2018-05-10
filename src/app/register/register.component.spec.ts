@@ -1,20 +1,20 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { ValueComponent } from './value.component';
+import { RegisterComponent } from './register.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-describe('ValueComponent', () => {
+describe('RegisterComponent', () => {
 
-  let fixture: ComponentFixture<ValueComponent>;
-  let component: ValueComponent;
+  let fixture: ComponentFixture<RegisterComponent>;
+  let component: RegisterComponent;
   beforeEach(() => {
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
       providers: [
       ],
-      declarations: [ValueComponent]
+      declarations: [RegisterComponent]
     });
 
-    fixture = TestBed.createComponent(ValueComponent);
+    fixture = TestBed.createComponent(RegisterComponent);
     component = fixture.componentInstance;
 
   });
