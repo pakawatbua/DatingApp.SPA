@@ -1,3 +1,4 @@
+import { UserService } from './_services/user.service';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
@@ -10,14 +11,17 @@ import { RegisterComponent } from './register/register.component';
 import { AuthService } from './_services/auth.service';
 import { AlertifyService } from './_services/alertify.service';
 import { BsDropdownModule } from 'ngx-bootstrap';
+import { MemberListComponent } from './member-list/member-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-    RegisterComponent
-  ],
+    RegisterComponent,
+    MemberListComponent
+],
   imports: [
     BrowserModule,
     HttpModule,
@@ -26,7 +30,8 @@ import { BsDropdownModule } from 'ngx-bootstrap';
   ],
   providers: [
     AuthService,
-    AlertifyService
+    AlertifyService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
