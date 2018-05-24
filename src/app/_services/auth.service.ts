@@ -26,7 +26,10 @@ export class AuthService {
   }
 
   loggedIn() {
-    return !this.jwtHelper.isTokenExpired('token');
+    // TODO Handle JWT token
+    // return !this.jwtHelper.isTokenExpired('token');
+    const token = localStorage.getItem('token');
+    return !!token;
   }
 
   register(model: any) {
